@@ -19,15 +19,14 @@ export class NavigatorComponent implements OnInit{
 
   }
  
-  incom = false;
+  income = true;
   outcome =false;
   loans = false;
   investments = false;
 
-
+ 
   status:boolean = false;
 
-  
 
 }
 
