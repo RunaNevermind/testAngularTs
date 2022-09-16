@@ -1,0 +1,24 @@
+<div class="tab">
+    <p>navigator works!</p>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="nav-tab" data-toggle="tab" data-target="#income" type="button" role="tab" [routerLink]="['']" [queryParams]="{'tab':0}" (click)="incom=!incom" [ngClass]="{'active': incom}">Income</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="nav-tab" data-toggle="tab" data-target="#outcome" type="button" role="tab"  [routerLink]="['']" [queryParams]="{'tab':1}" (click)="outcome=!outcome" [ngClass]="{'active': outcome}">Outcome</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="nav-tab" data-toggle="tab" data-target="#loans" type="button" role="tab" [routerLink]="['']" [queryParams]="{'tab':2}" (click)="loans=!loans" [ngClass]="{'active': loans}">Loans</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="nav-tab" data-toggle="tab" data-target="#investments" type="button" role="tab" [routerLink]="['']" [queryParams]="{'tab':3}" (click)="investments=!investments" [ngClass]="{'active': investments}">Investments</button>
+          </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="income" role="tabpanel" aria-labelledby="income-tab" [ngClass]="{'show active': incom}"><app-zero-tab></app-zero-tab></div>
+        <div class="tab-pane fade" id="outcome" role="tabpanel" aria-labelledby="outcome-tab" [ngClass]="{'show active': outcome}"><app-first-tab></app-first-tab></div>
+        <div class="tab-pane fade" id="loans" role="tabpanel" aria-labelledby="loans-tab" [ngClass]="{'show active': loans}"><app-second-tab></app-second-tab></div>
+        <div class="tab-pane fade" id="investments" role="tabpanel" aria-labelledby="investments-tab" [ngClass]="{'show active': investments}"><app-third-tab></app-third-tab></div>
+      </div>
+      
+</div>

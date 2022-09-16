@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { NavigatorComponent } from './navigator/navigator.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'testAngularTs';
+
 }
