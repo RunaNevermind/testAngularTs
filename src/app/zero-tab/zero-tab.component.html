@@ -1,1 +1,13 @@
-<p>zero-tab works!</p>
+<table class="table">
+    <thead>
+        <td>Name</td>
+        <td>Acount</td>
+    </thead>
+    <tbody>
+        <tr *ngFor="let name of userName">
+            <td>{{name.first}} {{name.last}}</td>
+            
+        </tr>
+
+    </tbody>
+</table>
