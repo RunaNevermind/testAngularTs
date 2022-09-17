@@ -13,7 +13,7 @@ export class ZeroTabComponent implements OnInit {
   userName:any=[];
 
   ngOnInit() {
-    for(let i=0; i<6; i++){    
+    for(let i=0; i<10; i++){    
       this.userName.push(this.Users.data[i])
       
     }

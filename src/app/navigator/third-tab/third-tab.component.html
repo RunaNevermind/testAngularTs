@@ -4,9 +4,9 @@
         <th scope="col">Address</th>
     </thead>
     <tbody>
-        <tr *ngFor="let name of userName">
-            <td>{{name.phone}}</td>
-            <td>{{name.address}}</td>
+        <tr *ngFor="let name of userName" class="content">
+            <td class="phone">{{name.phone}}</td>
+            <td class="address">{{name.address}}</td>
         </tr>
     </tbody>
 </table>

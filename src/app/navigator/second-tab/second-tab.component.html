@@ -4,9 +4,9 @@
         <th scope="col">Email</th>
     </thead>
     <tbody>
-        <tr *ngFor="let name of userName">
-            <td>{{name.name.first}} {{name.name.last}}</td>
-            <td>{{name.email}}</td>
+        <tr *ngFor="let name of userName" class="content">
+            <td class="name">{{name.name.first}} {{name.name.last}}</td>
+            <td class="e">{{name.email}}</td>
         </tr>
     </tbody>
 </table>

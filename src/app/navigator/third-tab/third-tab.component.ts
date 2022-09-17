@@ -12,7 +12,7 @@ export class ThirdTabComponent  implements OnInit {
   userName:any=[];
 
   ngOnInit() {
-    for(let i=0; i<6; i++){    
+    for(let i=0; i<7; i++){    
       this.userName.push(this.Users.data[i])
       
     }
