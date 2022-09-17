@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit} from '@angular/core';
+import * as userData from 'src/assets/jsonviewer.json'
 @Component({
   selector: 'app-second-tab',
   templateUrl: './second-tab.component.html',
   styleUrls: ['./second-tab.component.scss']
 })
-export class SecondTabComponent implements OnInit {
+export class SecondTabComponent  implements OnInit {
 
-  constructor() { }
+  Users: any = (userData as any).default;
 
-  ngOnInit(): void {
+  userName:any=[];
+
+  ngOnInit() {
+    for(let i=0; i<6; i++){    
+      this.userName.push(this.Users.data[i])
+      
+    }
   }
-
 }

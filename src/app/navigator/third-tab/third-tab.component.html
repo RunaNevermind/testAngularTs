@@ -1,1 +1,12 @@
-<p>third-tab works!</p>
+<table class="table">
+    <thead>
+        <th scope="col">Phone</th>
+        <th scope="col">Address</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let name of userName">
+            <td>{{name.phone}}</td>
+            <td>{{name.address}}</td>
+        </tr>
+    </tbody>
+</table>

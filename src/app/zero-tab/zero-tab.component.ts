@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import * as userData from 'src/assets/jsonviewer.json'
 @Component({
   selector: 'app-zero-tab',
@@ -10,15 +10,12 @@ export class ZeroTabComponent implements OnInit {
 
   Users: any = (userData as any).default;
 
-  id:any={};
   userName:any=[];
 
   ngOnInit() {
     for(let i=0; i<6; i++){    
-      this.userName.push(this.Users.data[i].name)
-    }
-    for(let i=0; i<6; i++){    
-      this.id.push(this.Users.data[i]._id)
+      this.userName.push(this.Users.data[i])
+      
     }
   }
 

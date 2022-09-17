@@ -1,13 +1,12 @@
 <table class="table">
     <thead>
-        <td>Name</td>
-        <td>Acount</td>
+        <th scope="col">Name</th>
+        <th scope="col">Acount</th>
     </thead>
     <tbody>
         <tr *ngFor="let name of userName">
-            <td>{{name.first}} {{name.last}}</td>
-            
+            <td>{{name.name.first}} {{name.name.last}}</td>
+            <td>{{name._id}}</td>
         </tr>
-
     </tbody>
 </table>
